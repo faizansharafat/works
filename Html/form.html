@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="/css/colour&BG.css">
+</head>
+<body>
+
+    <diV>
+    <form  action="ev.php">
+        <h2>Enter your detail for more information</h2>
+        <label for="name"> Name:</label>
+        <input type="text" placeholder=" Enter Name" id="name" name="name">
+        <hr>
+        <label for="s/o">Son of: </label>
+        <input type="text" placeholder="Father Name" id="s/o" name="s/o">
+        <hr>
+        <label for="cnic"> CNIC:</label>
+       <input type="text" placeholder="XXXXX-XXXXXXX-X" id="cnic" name="cnic">
+        <hr>
+        <label for="phone"></label>Phone:</label>
+        <input type="text" placeholder="+92 xxx xxxx xxx" id="phone" name="phone">
+        <hr>
+        <!-- checkout -->
+        <input type="checkbox" id="relgion" name="relgion" value="Muslim">
+        <label for="relgion"  >Muslim</label>
+        <input type="checkbox" id="relgion" name="relgion" value="non muslim">
+        <label for="relgion"> Non Muslim</label>
+        <hr>
+        <label for="sel">
+            Selected:
+        </label>
+        <select id="sel" name="sel" >
+            <option selected>
+                Math
+            </option>
+            <option>
+                urdu
+            </option>
+            <option selected>
+                english
+            </option>
+            <option>
+                Other
+            </option>
+        </select>
+        <hr>
+        <h4> Gender:</h4> 
+        <input type="radio" id="gen" name="gen" value="man" checked>
+        <label for="gen" >
+            Man
+        </label>
+        <input type="radio" id="gen" name="gen" value="Wonam">
+         <label>
+            Woman
+        </label>
+        <hr> 
+        <label for="time"></label>
+        <input type="time" id="time" name="time">
+        <hr>
+        <label for="file">upload file</label>
+        <input type="file" id="file" name="file">
+        <hr>
+        <button type="submit"> submit</button>
+        <hr>
+       
+
+    </form>
+    </diV>
+</body>
+</html>
