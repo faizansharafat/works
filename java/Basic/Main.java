@@ -1,80 +1,27 @@
-import java.util.Scanner;
-class Publication {
-    protected String title;
-    protected double price;
 
-     Scanner sc = new Scanner(System.in);
+import java.util.ArrayList;
 
-    void set() {
-        System.out.print("Enter title: ");
-        title = sc.nextLine();
-        System.out.print("Enter price: ");
-        price = sc.nextDouble();
-        sc.nextLine();
-    }
-
-    void get() {
-        System.out.println("Title: " + title);
-        System.out.println("Price: $" + price);
-    }
-
-    void display() {
-        get();
-    }
-}
-class Book extends Publication {
-    private int pageCount;
-    @Override
-    void set() {
-        super.set();
-
-        System.out.print("Enter page count: ");
-        pageCount = sc.nextInt();
-        sc.nextLine();
-    }
-    @Override
-    void get() {
-        super.get();
-        System.out.println("Page Count: " + pageCount);
-    }
-
-    @Override
-    void display() {
-        System.out.println("\n--- Book Details ---");
-        get();
-    }
-}
-class Tape extends Publication {
-    private double playingTime;
-
-    @Override
-    void set() {
-        super.set();
-
-        System.out.print("Enter playing time in minutes: ");
-        playingTime = sc.nextDouble();
-        sc.nextLine();
-    }
-    @Override
-    void get() {
-        super.get();
-        System.out.println("Playing Time: " + playingTime + " minutes");
-    }
-    @Override
-    void display() {
-        System.out.println("\n--- Tape Details ---");
-        get();
-    }
-}
-
-// Main class
 public class Main {
     public static void main(String[] args) {
-        Book b = new Book();
-        Tape t = new Tape();
-        b.set();
-        t.set();
-        b.display();
-        t.display();
+        int num = 10;
+        Integer obj = num;
+        int value = obj;
+
+        System.out.println("Primitive Value: " + num);
+        System.out.println("Integer Object: " + obj);
+        System.out.println("Unboxed Value: " + value);
+
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(10);
+        list.add(20);
+        list.add(30);
+        int sum = 0;
+        for (Integer n : list) {
+            sum += n;
+        }
+        System.out.println("List: " + list);
+        System.out.println("Sum: " + sum);
+        Integer x = null;
+        System.out.println("Null Value: " + x);
     }
 }
