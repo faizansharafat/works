@@ -161,76 +161,34 @@ public class ass01 {
         book2.returnBook();
         book2.checkAvailability();
 
-
-        // Book 3
-        System.out.println("========== BOOK 3 ==========");
         book3.displayBookInfo();
-
         book3.issueBook();
         book3.issueBook();
         book3.issueBook();
         book3.returnBook();
-
         book3.checkAvailability();
-
-        System.out.println();
-
-
         // =================================================
         //                  PRODUCT OBJECTS
         // =================================================
 
         Product p1 = new Product();
+        Product p2 = new Product(202,"Laptop", "Electronics",120000,15);
+        Product p3 = new Product(203,"Keyboard","Accessories",3500, 8);
 
-        Product p2 = new Product(
-            202,
-            "Laptop",
-            "Electronics",
-            120000,
-            15
-        );
-
-        Product p3 = new Product(
-            203,
-            "Keyboard",
-            "Accessories",
-            3500,
-            8
-        );
-
-
-        // Product 1
-        System.out.println("========== PRODUCT 1 ==========");
         p1.display();
         p1.check();
-
-        System.out.println();
-
-
-        // Product 2
-        System.out.println("========== PRODUCT 2 ==========");
+       
         p2.display();
-
         p2.addStock(10);
         p2.sell(5);
         p2.sell(30);
-
         System.out.println("Total Stock Value: " + p2.value());
-
         p2.check();
 
-        System.out.println();
-
-
-        // Product 3
-        System.out.println("========== PRODUCT 3 ==========");
         p3.display();
-
         p3.sell(3);
         p3.addStock(10);
-
         System.out.println("Total Stock Value: " + p3.value());
-
         p3.check();
     }
 }
