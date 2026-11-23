@@ -1,0 +1,5 @@
+CREATE DATABASE IF NOT EXISTS XYZ;
+USE XYZ;
+CREATE TABLE if NOT EXISTS employee_info(id int PRIMARY KEY,Name VARCHAR(100),Salary DOUBLE NOT NULL);
+INSERT INTO employee_info VALUE(1,"adam",25000),(2,"BOB",30000),(3,"casey",40000);
+SELECT * FROM employee_info;
