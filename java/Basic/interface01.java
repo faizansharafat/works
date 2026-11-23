@@ -10,10 +10,9 @@ class son03 implements father{
 
 
 public class interface01 {
-    void main(){
+   public static  void main(String[] args){
         son03 s1 =new son03();
         s1.printdetail();
-
     }
     
 }
