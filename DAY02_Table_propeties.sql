@@ -1,0 +1,7 @@
+SELECT DATABASE();
+USE uni;
+CREATE TABLE IF NOT EXISTS fee(id INT PRIMARY KEY,Name VARCHAR(100),Dept VARCHAR (100),feeAmount DOUBLE NOT NULL);
+INSERT INTO fee VALUE(001,"Muhammad Faizan","MATH",120000);
+INSERT into fee VALUE(0002,"Ali Ahmad","physics",180000);
+INSERT INTO fee VALUE(0004,"Muhammad sufyan","CS",2000000);
+select * from fee;
